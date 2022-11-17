@@ -18,5 +18,10 @@ class Servicesreqest {
       print(popularMovies);
     });
     print(popularMovies.results!.first.originalTitle);
+    for (var i = 0; i < popularMovies.results!.length; i++) {
+      print(popularMovies.results![i].originalTitle! +
+          "\n" +
+          popularMovies.results![i].video.toString());
+    }
   }
 }
